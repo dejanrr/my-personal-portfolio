@@ -1,0 +1,36 @@
+.project-container {
+  display: flex;
+  height: 50vh;
+  width: 100%;
+}
+
+.project-info {
+  width: 50%;
+  order: 1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.6;
+  margin: auto;
+}
+
+.project-wrapper {
+  margin-left: 10%;
+}
+
+.image-container {
+  width: 50%;
+  order: 2;
+  margin: auto;
+}
+
+.image-container img {
+  margin: auto;
+  display: block;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+}

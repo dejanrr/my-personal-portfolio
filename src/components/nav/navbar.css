@@ -1,0 +1,38 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  position: absolute;
+  padding: 30px 10%;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  padding: 0 20px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-list li:hover {
+  color: #b16d8c;
+}
+
+.logo {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 26px;
+  margin-right: auto;
+  cursor: pointer;
+}
