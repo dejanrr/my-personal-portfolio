@@ -26,7 +26,7 @@ const Footer = () => {
             <InstagramIcon />
           </li>
           <li>
-            <Twitter />
+            <TwitterIcon />
           </li>
           <li>
             <a href="https://github.com/dejanrr/todo-app">
