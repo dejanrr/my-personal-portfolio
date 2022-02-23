@@ -26,10 +26,12 @@ const Footer = () => {
             <InstagramIcon />
           </li>
           <li>
-            <TwitterIcon />
+            <Twitter />
           </li>
           <li>
-            <GitHubIcon />
+            <a href="https://github.com/dejanrr/todo-app">
+              <GitHubIcon />
+            </a>
           </li>
           <li>
             <LinkedInIcon />
