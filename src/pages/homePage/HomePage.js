@@ -4,13 +4,12 @@ import Vector from "./vector.png";
 import FadeIn from "react-fade-in";
 import "./homePage.css";
 
-const HomePage = () => {
+const HomePage = ({ homeRef, scrollToSkills }) => {
   return (
-    <div className="hero">
+    <div className="hero" ref={homeRef}>
       <div className="info-box">
         <div className="info-wrapper">
           <p className="homepage-title">About me</p>
-
           <h1>
             <Typical
               loop={Infinity}
@@ -23,16 +22,14 @@ const HomePage = () => {
               ]}
             />{" "}
           </h1>
-
           <p className="about-me">
             My name is <span className="emphasized rose-color">Dejan</span>, I'm
             a front-end developer. Fully comitted to the philosophy of life-long
-            learning, I'm a developer with a deep passion for creating{" "}
+            learning, I'm a developer with a deep passion for creating
             <span className="emphasized rose-color">web apps</span>.
           </p>
-
           <div className="button">
-            <button className="btn">See more</button>
+            <button className="btn" onClick={scrollToSkills} >See More</button>
           </div>
         </div>
       </div>

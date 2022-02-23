@@ -5,7 +5,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -16,11 +15,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="copyright-section">
         CopyRight © 2022 | All Rights Reserved
-      </div>
-      <div className="arrow-box" onClick={scrollToTop}>
-        <span>
-          <ArrowUpwardIcon />
-        </span>
       </div>
       <div className="social-media-section">
         <ul>

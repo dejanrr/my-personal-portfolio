@@ -34,3 +34,39 @@
   display: flex;
   justify-content: space-between;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1600px) {
+  .image-container {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-container {
+    height: 100vh;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  .project-info {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .project-wrapper {
+    margin: auto;
+    padding: 50px;
+    text-align: justify;
+  }
+}

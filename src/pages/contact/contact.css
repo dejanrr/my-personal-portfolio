@@ -15,7 +15,7 @@
   margin: auto;
 }
 
-.up {
+.contact-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -26,14 +26,14 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 15%;
+  margin: auto;
 }
 
-.up input {
+.contact-wrapper input {
   height: 5vh;
 }
 
-.down input {
+.textarea-box input {
   width: 100%;
   padding: 10%;
 }
@@ -70,12 +70,35 @@ input {
   font-size: 16px;
 }
 
+.another {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.6;
+  margin: auto;
+}
+
 @media only screen and (max-width: 768px) {
+  input {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-wrapper input {
+    margin-top: 10px;
+  }
+
   textarea {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin: auto;
     width: 70%;
     justify-content: center;
   }
@@ -88,18 +111,14 @@ input {
     justify-content: center;
   }
 
-  input {
-    max-width: 100%;
-  }
-
-  .up {
+  .contact-wrapper {
     display: block;
     margin: auto;
     text-align: center;
     padding: 10px 0;
   }
 
-  .up p {
+  .contact-wrapper p {
     padding: 3px;
   }
 

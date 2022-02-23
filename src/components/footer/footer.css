@@ -31,19 +31,24 @@
   transition: all 0.4s ease-in-out;
 }
 
-.arrow-box {
-  border: 2px solid #fff;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background-color: transparent;
-  cursor: pointer;
-  margin: 20px;
-}
+@media only screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
 
-.arrow-box:hover {
-  background-color: #b16d8c;
-  transform: scale(1.2);
+  .copyright-section {
+    order: 2;
+    margin: auto;
+  }
 
-  transition: all 0.4s ease;
+  .social-media-section {
+    order: 1;
+    margin: auto;
+  }
+
+  .social-media-section ul li {
+    margin: auto;
+  }
 }

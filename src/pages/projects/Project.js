@@ -1,7 +1,13 @@
 import React from "react";
 import "./project.css";
 
-const Project = ({ projectImage, projectName, projectInfo }) => {
+const Project = ({
+  projectImage,
+  projectName,
+  projectInfo,
+  sourceCodeLink,
+  livePreviewLink,
+}) => {
   return (
     <div className="project-container">
       <div className="project-info">
@@ -9,8 +15,12 @@ const Project = ({ projectImage, projectName, projectInfo }) => {
           <div className="project-name section-title">{projectName}</div>
           <div className="project-info-text">{projectInfo}</div>
           <div className="project-buttons">
-            <button className="btn button">Source Code</button>
-            <button className="btn button">Live Demo</button>
+            <button className="btn button">
+              <a href={sourceCodeLink}>Source Code</a>
+            </button>
+            <button className="btn button">
+              <a href={livePreviewLink}>Live Demo</a>
+            </button>
           </div>
         </div>
       </div>

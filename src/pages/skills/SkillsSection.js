@@ -1,9 +1,9 @@
 import React from "react";
 import "./skillsSection.css";
 
-const SkillsSection = () => {
+const SkillsSection = ({ skillsRef }) => {
   return (
-    <div className="skills-section">
+    <div className="skills-section" ref={skillsRef}>
       <div className="text-box">
         <p className="section-title">
           My <span className="rose-color">skills</span>

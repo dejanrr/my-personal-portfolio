@@ -74,3 +74,40 @@
 .secondary-color {
   border-color: #4a3c7a;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .section-title {
+    text-align: center;
+    padding: 70px;
+  }
+
+  .text-box p {
+    margin: auto;
+  }
+
+  .skills-text {
+    text-align: justify;
+  }
+
+  .text-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .technologies-box {
+    flex-direction: row;
+    width: 100%;
+    padding: 100px;
+  }
+
+  .shape {
+    margin: 10px;
+  }
+}

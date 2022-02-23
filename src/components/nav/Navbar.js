@@ -1,21 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 
-//#1F2235 bg color
+const Navbar = ({
+  scrollToHome,
+  scrollToSkills,
+  scrollToProjects,
+  scrollToContact,
+}) => {
+  const [navbar, setNavbar] = useState(false);
 
-const Navbar = () => {
+  const changeNavbar = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbar);
+
   return (
-    <div className="navbar">
-      <span className="logo">D / <span className="rose-color">DEV</span> </span>
+    <header className={navbar ? "navbar active" : "navbar"}>
+      <div className="logo" onClick={scrollToHome}>
+        D / <span className="rose-color">Dev</span>{" "}
+      </div>
       <nav>
         <ul className="nav-list">
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <li onClick={scrollToHome}>Home</li>
+          <li onClick={scrollToSkills}>Skills</li>
+          <li onClick={scrollToProjects}>Projects</li>
+          <li onClick={scrollToContact}>Contact</li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 
