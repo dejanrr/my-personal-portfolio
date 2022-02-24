@@ -75,7 +75,6 @@
   border-color: #4a3c7a;
 }
 
-
 @media only screen and (max-width: 768px) {
   .skills-section {
     display: flex;
@@ -109,5 +108,24 @@
 
   .shape {
     margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .shape {
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .shape {
+    width: 70px;
+    height: 50px;
+  }
+
+  .shape img {
+    width: 70%;
+    height: 70%;
   }
 }
